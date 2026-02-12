@@ -1,35 +1,33 @@
-public class DogOwnerMain {
 
-    /*
-    Opdracht
-    Geef de klasse Dog de volgende instance variables: name, species, age, sex. Datatypes mag je zelf verzinnen.
-    De sex en species variables mogen na instantiatie niet meer aangepast worden.
 
-    Geef de klasse DogOwner de volgende instance variables: name, sex.
-    Er zijn geen restricties op getters en setters.
+/*
+Opdracht
+Geef de klasse Dog de volgende instance variables: name, species, age, sex. Datatypes mag je zelf verzinnen.
+De sex en species variables mogen na instantiatie niet meer aangepast worden.
 
-    Geef de DogOwner klasse ook een variabele van type Dog. De DogOwner is in dit geval de eigenaar.
-    De DogOwner-klasse moet methodes bevatten om de naam van de hond aan te passen én de leeftijd met 1 te verhogen.
+Geef de klasse DogOwner de volgende instance variables: name, sex.
+Er zijn geen restricties op getters en setters.
 
-    Geef de DogOwner een toString()-methode en druk dit af:
-    """
-    [NAAM-DogOwner] heeft een [reu/teef], 
-    deze is [xx] jaar oud en van het soort: [SOORT-Dog]. 
-    De hond heet: [NAAM-Dog]
-    """
+Geef de DogOwner klasse ook een variabele van type Dog. De DogOwner is in dit geval de eigenaar.
+De DogOwner-klasse moet methodes bevatten om de naam van de hond aan te passen én de leeftijd met 1 te verhogen.
 
-    Instantieer hieronder de objecten en laat zien dat je code werkt.
-     */
+Geef de DogOwner een toString()-methode en druk dit af:
+"""
+[NAAM-DogOwner] heeft een [reu/teef],
+deze is [xx] jaar oud en van het soort: [SOORT-Dog].
+De hond heet: [NAAM-Dog]
+"""
 
-    public static void main(String[] args) {
+Instantieer hieronder de objecten en laat zien dat je code werkt.
+ */
 
-        Dog dog = new Dog("Barra", "vuilnisbak", 12, "teef");
+void main(String[] args) {
 
-        DogOwner nick = new DogOwner("Nick", "male");
-        nick.setDog(dog);
+    Dog dog = new Dog("Barra", "vuilnisbak", 12, "teef");
 
-        System.out.println(nick.toString());
+    DogOwner nick = new DogOwner("Nick", "male");
+    nick.setDog(dog);
 
-    }
+    IO.println(nick.toString());
 
 }
